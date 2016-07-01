@@ -11,7 +11,7 @@ router.get('/active_users', function(req, res, next) {
   res.json(data);
 });
 router.get('/users/:id', function(req, res, next) {
-  res.render("index", {title: "Kyle Maiman", ben: req.params.id})
+  res.json(data[req.params.id])
 });
 
 module.exports = router;
